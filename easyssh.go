@@ -2,7 +2,7 @@
 // features in Go. You can simply run a command on a remote server or get a file
 // even simpler than native console SSH client. You don't need to think about
 // Dials, sessions, defers, or public keys... Let easyssh think about it!
-package easyssh
+package easycmd
 
 import (
 	"bufio"
