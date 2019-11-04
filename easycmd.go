@@ -40,6 +40,7 @@ func Stream(command string) (output chan string, done chan bool, err error) {
 		}
 		// close all of our open resources
 		done <- true
+		cmd.Wait()
 	}(scanner, outputChan, done)
 	return outputChan, done, err
 }
